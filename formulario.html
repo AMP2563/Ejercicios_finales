@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de prueba de HTML5</title>
+  <style>
+    label {
+      display: block;
+      margin-top: 12px;
+    }
+    .blanco {
+        margin-top: 20px;
+    }
+  </style>
+  <script>
+    function mostrarValor(valor) {
+      document.getElementById("valorEdad").textContent = valor;
+    }
+  </script>
+</head>
+<body style="font-family: Tahoma, sans-serif;">
+  <h1>Formulario de prueba de HTML5</h1>
+
+  <form action="" method="get">
+    <fieldset>
+      <legend>Datos personales</legend>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" size="30" maxlength="20" required autofocus>
+
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" maxlength="8">
+
+      <label for="edad">Edad:</label>
+      <input type="range" id="edad" name="edad" min="18" max="65" oninput="mostrarValor(this.value)"><br>
+      <span id="valorEdad">18</span> años (mínimo: 18 - máximo: 65)
+
+      <label for="numero">Número:</label>
+      <input type="number" id="numero" name="numero" min="-10" max="10">
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono">
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="url">URL:</label>
+      <input type="url" id="url" name="url" placeholder="Escribe la URL">
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha">
+
+      <label for="tiempo">Tiempo:</label>
+      <input type="time" id="tiempo" name="tiempo">
+
+      <label for="fechahora">Fecha y hora:</label>
+      <input type="datetime-local" id="fechahora" name="fechahora">
+
+      <label for="mes">Mes:</label>
+      <input type="month" id="mes" name="mes">
+
+      <label for="semana">Semana:</label>
+      <input type="week" id="semana" name="semana">
+
+      <label for="color">Color favorito:</label>
+      <input type="color" id="color" name="color">
+    </fieldset>
+
+    <fieldset class="blanco">
+      <legend>Módulo preferido</legend>
+      <label><input type="radio" id="html" name="modulo" value="HTML" checked> HTML</label>
+      <label><input type="radio" id="css" name="modulo" value="CSS"> CSS</label>
+      <label><input type="radio" id="js" name="modulo" value="JS"> JS</label>
+      <label><input type="radio" id="framework" name="modulo" value="Framework"> Framework</label>
+    </fieldset>
+
+    <fieldset class="blanco">
+      <legend>Temas más interesantes</legend>
+      <label><input type="checkbox" id="poo" name="temas" value="POO"> POO</label>
+      <label><input type="checkbox" id="bbdd" name="temas" value="BBDD"> BBDD</label>
+      <label><input type="checkbox" id="htmltema" name="temas" value="HTML"> HTML</label>
+      <label><input type="checkbox" id="so" name="temas" value="Sistema Operativo" checked> Sistema Operativo</label>
+    </fieldset>
+
+    <fieldset class="blanco">
+      <legend>Fase favorita</legend>
+      <label for="fase">Seleccione una fase:</label>
+      <select id="fase" name="fase">
+        <option value="">Seleccione una fase</option>
+        <option value="analisis">Análisis</option>
+        <option value="diseno">Diseño</option>
+        <option value="programacion">Programación</option>
+        <option value="pruebas">Pruebas</option>
+        <option value="despliegue">Despliegue</option>
+        <option value="mantenimiento">Mantenimiento</option>
+      </select>
+    </fieldset>
+
+    <label for="observaciones">Observaciones:</label>
+    <textarea id="observaciones" name="observaciones" rows="30" cols="20"></textarea>
+
+    <br><br>
+    <input type="reset" value="LIMPIAR">
+    <input type="submit" value="ENVIAR">
+  </form>
+</body>
+</html>
+
+</body>
+</html>
