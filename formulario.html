@@ -82,20 +82,29 @@
       <label><input type="checkbox" id="htmltema" name="temas" value="HTML"> HTML</label>
       <label><input type="checkbox" id="so" name="temas" value="Sistema Operativo" checked> Sistema Operativo</label>
     </fieldset>
-
-    <fieldset class="blanco">
-      <legend>Fase favorita</legend>
-      <label for="fase">Seleccione una fase:</label>
-      <select id="fase" name="fase">
-        <option value="">Seleccione una fase</option>
-        <option value="analisis">Análisis</option>
-        <option value="diseno">Diseño</option>
-        <option value="programacion">Programación</option>
-        <option value="pruebas">Pruebas</option>
-        <option value="despliegue">Despliegue</option>
-        <option value="mantenimiento">Mantenimiento</option>
-      </select>
-    </fieldset>
+    
+<fieldset class="blanco">
+  <legend>Fase favorita</legend>
+  <label for="temafav">Tema favorito:</label>
+  <select id="temafav">
+  <option value="-1" selected>Seleccione un tema</option>
+  <optgroup label="Bloque 1">
+  <option value="b1t1">B1T1</option>
+  <option value="b1t2">B1T2</option>
+  <option value="b1t3">B1T3</option>
+  </optgroup>
+  <optgroup label="Bloque 2">
+  <option value="b2t2">B2T2</option>
+  <option value="b2t4">B2T4</option>
+  <option value="b2t5">B2T5</option>
+  </optgroup>
+  <optgroup label="Bloque 3">
+  <option value="b3t1">B3T1</option>
+  <option value="b3t2">B3T2</option>
+  <option value="b3t3">B3T3</option>
+  </optgroup>
+  </select>
+</fieldset>
 
     <label for="observaciones">Observaciones:</label>
     <textarea id="observaciones" name="observaciones" rows="30" cols="20"></textarea>
