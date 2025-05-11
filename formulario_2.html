@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-2</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        .blanco {
+        margin-top: 20px;
+        }   
+    </style>
+    <script>
+        function mostrarValor(valor) {
+            document.getElementById("valorEdad").textContent = valor;
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulario de prueba de HTML 5</h1>
+
+    <form action="" method="get" >
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" size="30" maxlength="20" autofocus>
+
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" id="Contraseña" name="Contraseña" maxlength="8">
+
+            <label for="Edad">Edad (entre 18 y 65 años):</label>
+            <input type="range" id="Edad" name="Edad" min="18" max="65" value="18" oninput="mostrarValor(this.value)"><br>
+            <span id="valorEdad">18</span> (desliza para establecer la edad)
+
+            <label for="number">Número:</label>
+            <input type="number" id="Numero" name="Numero" min="-10" max="10">
+
+            <label for="tel">Teléfono:</label>
+            <input type="tel" name="Telefono" id="Telefono">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="Correo electronico" id="Correo electronico">
+
+            <label for="URL">URL:</label>
+            <input type="url" name="URL" id="URL" placeholder="Teclea la URL">
+
+            <label for="date">Fecha:</label>
+            <input type="date" name="Fecha" id="Fecha">
+
+            <label for="time">Tiempo:</label>
+            <input type="time" name="Tiempo" id="Tiempo">
+
+            <label for="datetime-local">Fecha y hora:</label>
+            <input type="datetime-local" name="Fecha y hora" id="Fecha y hora">
+
+            <label for="month">Mes:</label>
+            <input type="month" name="Mes" id="Mes">
+
+            <label for="week">Semana:</label>
+            <input type="week" name="Semana" id="Semana">
+
+            <label for="color">Color</label>
+            <input type="color" name="Color" id="Color" value="#ff0000">
+        </fieldset>
+
+        <fieldset class="blanco">
+            <legend>Módulo preferido</legend>
+
+            <label><input type="radio" name="HTML" id="HTML" value="HTML" checked>HTML</label>
+            <label><input type="radio" name="CSS" id="CSS" value="CSS">CSS</label>
+            <label><input type="radio" name="JS" id="JS" value="JS">JS</label>
+            <label><input type="radio" name="Framework" id="Framework" value="Framework">Framework</label>    
+        </fieldset>
+
+        <fieldset class="blanco">
+            <legend>Temas interesantes</legend>
+
+            <label><input type="checkbox" name="POO" id="POO" value="POO">POO</label>
+            <label><input type="checkbox" name="BBDD" id="BBDD" value="BBDD">BDD</label>
+            <label><input type="checkbox" name="HTML" id="HTML" value="HTML">HTML</label>
+            <label><input type="checkbox" name="SO" id="SO" value="SO" checked>SO</label>    
+        </fieldset>
+
+        <fieldset class="blanco">
+            <legend>Fase favorita</legend>
+            <label for="temafav">Tema favorito:</label>
+            <select id="temafav">
+                <option value="-1" selected>Seleccione un tema</option>
+                <optgroup label="Seccion 1"></label>
+                    <option value="Leche">Leche</option>
+                    <option value="Cacao">Cacao</option>
+                    <option value="Avellanas">Avellanas</option>
+                    <option value="Azucar">Azúcar</option>
+                </optgroup>
+                <optgroup label="Seccion 2"></label>
+                    <option value="Nocilla">Nocilla</option>
+                    <option value="ColaCao">ColaCao</option>
+                    <option value="Nesquik">Nesquik</option>
+                    <option value="Cacaolat">Cacaolat</option>
+                </optgroup>
+                <optgroup label="Seccion 3"></label>
+                    <option value="Vino">Vino</option>
+                    <option value="Cerveza">Cerveza</option>
+                    <option value="Anis">Anís</option>
+                    <option value="Absenta">Absenta</option>
+                </optgroup> 
+            </select>
+        </fieldset>
+    
+    <label for="Observaciones">Observaciones:</label>
+        <textarea name="Observaciones" id="Observaciones" rows="10" cols="40"></textarea><br><br>
+    <input type="reset" value="LIMPIAR">
+    <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>
