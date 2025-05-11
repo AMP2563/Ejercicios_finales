@@ -12,6 +12,9 @@
     .blanco {
         margin-top: 20px;
     }
+    body {
+      font-family: Tahoma, sans-serif;
+    }
   </style>
   <script>
     function mostrarValor(valor) {
@@ -19,7 +22,7 @@
     }
   </script>
 </head>
-<body style="font-family: Tahoma, sans-serif;">
+<body>
   <h1>Formulario de prueba de HTML5</h1>
 
   <form action="" method="get">
@@ -86,31 +89,31 @@
 <fieldset class="blanco">
   <legend>Fase favorita</legend>
   <label for="temafav">Tema favorito:</label>
-  <select id="temafav">
+ <select id="temafav">
   <option value="-1" selected>Seleccione un tema</option>
   <optgroup label="Bloque 1">
-  <option value="b1t1">B1T1</option>
-  <option value="b1t2">B1T2</option>
-  <option value="b1t3">B1T3</option>
+    <option value="b1t1">B1T1</option>
+    <option value="b1t2">B1T2</option>
+    <option value="b1t3">B1T3</option>
   </optgroup>
   <optgroup label="Bloque 2">
-  <option value="b2t2">B2T2</option>
-  <option value="b2t4">B2T4</option>
-  <option value="b2t5">B2T5</option>
+    <option value="b2t2">B2T2</option>
+    <option value="b2t4">B2T4</option>
+    <option value="b2t5">B2T5</option>
   </optgroup>
   <optgroup label="Bloque 3">
-  <option value="b3t1">B3T1</option>
-  <option value="b3t2">B3T2</option>
-  <option value="b3t3">B3T3</option>
+    <option value="b3t1">B3T1</option>
+    <option value="b3t2">B3T2</option>
+    <option value="b3t3">B3T3</option>
   </optgroup>
-  </select>
+ </select>
 </fieldset>
 
 <label for="observaciones">Observaciones:</label>
     <textarea id="observaciones" name="observaciones" rows="30" cols="20"></textarea>
     <br><br>
-    <input type="reset" value="LIMPIAR">
-    <input type="submit" value="ENVIAR">
+<input type="reset" value="LIMPIAR">
+<input type="submit" value="ENVIAR">
 </form>
 </body>
 </html>
