@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Atajos Emmet</h1>
+    <!--h1{Ataho de Emmet}-->
+    <h1>Atajo de Emmet</h1>
+    <!-- Clases -->
+<!-- h2.class -->
+ <h2 class="class"></h2>
+
+ <!-- div#mensaje -->
+  <div id="mensaje"></div>
+
+  <!-- imput:text -->
+ <input type="text" name="" id="">
+
+ <!-- table>tr*3>td*5  crea una tabla de tres líneas con cinco columnas-->
+<table>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+
+<!-- Los nodos hijos se representan con el signo > -->
+ <!-- ul>li -->
+ <ul>
+    <li></li>
+ </ul>
+
+<h2>nodos hermanos</h2>
+<!-- p+a -->
+ <p></p>
+ <a href=""></a>
+
+ <h2>combinando hermanos e hijos</h2>
+ <!-- p+a>img -->
+  <p></p>
+  <a href=""><img src="" alt=""></a>
+
+  <h2>Etiquetas</h2>
+  <p>Lista ordenada con 5 elementos</p>
+  <!-- ol>li*5 -->
+   <ol>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+   </ol>
+
+   <p>listas desordenadas con 12 elementos comenzando con mes 1 y terminando con mes 12</p>
+   <!-- ul>li*12 {Mes $} -->
+    <ul>
+        <li>Mes 1</li>
+        <li>Mes 2</li>
+        <li>Mes 3</li>
+        <li>Mes 4</li>
+        <li>Mes 5</li>
+        <li>Mes 6</li>
+        <li>Mes 7</li>
+        <li>Mes 8</li>
+        <li>Mes 9</li>
+        <li>Mes 10</li>
+        <li>Mes 11</li>
+        <li>Mes 12</li>
+    </ul>
+
+    <h2>agrupaciones</h2>
+    <p>su símbolo son los ()</p>
+    <p>Hacer un div y dentro como hermanos una imagen y queremos tres agrupacines</p>
+    <!-- div>(img+p)*3 -->
+    <div>
+        <img src="" alt="">
+        <p></p>
+        <img src="" alt="">
+        <p></p>
+        <img src="" alt="">
+        <p></p>
+    </div>
+
+    <h2>Nodo superior "acento circunflejo"</h2>
+    <!-- ul>li>div+p^^ a-->
+     <ul>
+        <li>
+            <div></div>
+            <p></p>
+        </li>
+     </ul>
+     <a href=""></a>
+
+     <h2>Numerador - $</h2>
+     <!-- ul>li*10{Capítulo $} -->
+      <ul>
+        <li>Capítulo 1</li>
+        <li>Capítulo 2</li>
+        <li>Capítulo 3</li>
+        <li>Capítulo 4</li>
+        <li>Capítulo 5</li>
+        <li>Capítulo 6</li>
+        <li>Capítulo 7</li>
+        <li>Capítulo 8</li>
+        <li>Capítulo 9</li>
+        <li>Capítulo 10</li>
+      </ul>
+
+      <h2>Atributos - []</h2>
+      <!-- a[target='_blanc'] -->
+      <a href="" target="_blanc"></a>
+
+      <h2>Ejemplos</h2>
+      <p>Tabla con 5 renglones y 3 columnas</p>
+      <table>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+      </table>
+    <p>queremos un div que dentro tenga:
+        1 una lista ordenada  con 5 elementos
+        1 imagen
+        1 párrafo
+    </p>
+      <!-- div>ol>li*5^^img+p -->
+       <div>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+       </div>
+       <img src="" alt="">
+       <p></p>
+ <p>Lista ordenada para cada elemento y una etiqueta span</p>
+
+ <!-- ol>li>p+span -->
+  <ol>
+    <li>
+        <p></p>
+        <span></span>
+    </li>
+  </ol>
+
+  <p>una lista desordenada, para cada elemento se desea un párrafo con clase rojo e id pregunta</p>
+  <!-- ul>li>p.rojo#pregunta -->
+   <ul>
+    <li>
+        <p class="rojo" id="pregunta"></p>
+    </li>
+   </ul>
+
+   <p>Lista ordenada con 5 elementos, cada elemento tiene dos párrafos el primer párrafo
+    tiene una clase que se llama pregunta y el siguiente respuesta</p>
+<!-- ol>li*5>p.pregunta+p.respuesta -->
+ <ol>
+    <li>
+        <p class="pregunta"></p>
+        <p class="respuesta"></p>
+    </li>
+    <li>
+        <p class="pregunta"></p>
+        <p class="respuesta"></p>
+    </li>
+    <li>
+        <p class="pregunta"></p>
+        <p class="respuesta"></p>
+    </li>
+    <li>
+        <p class="pregunta"></p>
+        <p class="respuesta"></p>
+    </li>
+    <li>
+        <p class="pregunta"></p>
+        <p class="respuesta"></p>
+    </li>
+ </ol>
+<p>Utilizando Emmet: crea una tabla de 3 renglones y dos columnas, en la primera columna
+ quiero mostrar una imagen, en la segunda columna, un párrafo y un enlace</p>
+ <!-- table>tr*3>td>img^td>p+a -->
+<table>
+    <tr>
+        <td><img src="" alt=""></td>
+        <td>
+            <p></p>
+            <a href=""></a>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="" alt=""></td>
+        <td>
+            <p></p>
+            <a href=""></a>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="" alt=""></td>
+        <td>
+            <p></p>
+            <a href=""></a>
+        </td>
+    </tr>
+</table>
+
+<p>Hacer un select con 5 opciones que ponga ciudad un dos tres y cuatro</p>
+<select name="" id="">
+    Ciudad 1
+    Ciudad 2
+    Ciudad 3
+    Ciudad 4
+    Ciudad 5
+</select>
+
+<select name="" id="">
+    <option value="1">Ciudad 1</option>
+    <option value="2">Ciudad 2</option>
+    <option value="3">Ciudad 3</option>
+    <option value="4">Ciudad 4</option>
+    <option value="5">Ciudad 5</option>
+</select>
+
+<p>Lista ordenada que cada elemento tenga el contenido de la etiqueta tenga los planetas por orden hasta el último</p>
+<!-- ol>li{Mercurio}+li{Venus}+li{Tierra}+li{Marte}+li{Júpiter}+li{Saturno}+li{Urano}+li{Neptuno} -->
+<ol>
+    <li>Mercurio</li>
+    <li>Venus</li>
+    <li>Tierra</li>
+    <li>Marte</li>
+    <li>Júpiter</li>
+    <li>Saturno</li>
+    <li>Urano</li>
+    <li>Neptuno</li>
+</ol>
+
+<!-- ol>li{$}*8 -->
+<ol>
+    <li>Planeta 1</li>
+    <li>Planeta 2</li>
+    <li>Planeta 3</li>
+    <li>Planeta 4</li>
+    <li>Planeta 5</li>
+    <li>Planeta 6</li>
+    <li>Planeta 7</li>
+    <li>Planeta 8</li>
+</ol>
+
+</body>
+</html>
